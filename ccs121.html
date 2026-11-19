@@ -1,0 +1,863 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CCS 121 - Introduction to Programming</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f1f5f9;
+            color: #1e293b;
+            line-height: 1.7;
+            margin: 0;
+        }
+
+        header {
+            background: #172554;
+            color: white;
+            text-align: center;
+            padding: 35px 15px;
+        }
+
+        header h1 {
+            margin-bottom: 5px;
+        }
+
+        header p {
+            color: #bfdbfe;
+        }
+
+        main {
+            max-width: 1000px;
+            margin: 25px auto;
+            padding: 20px;
+        }
+
+        section {
+            background: white;
+            padding: 24px;
+            margin-bottom: 22px;
+            border-radius: 12px;
+            box-shadow: 0 3px 12px rgba(0,0,0,0.06);
+        }
+
+        h2 {
+            color: #1d4ed8;
+            border-bottom: 2px solid #dbeafe;
+            padding-bottom: 8px;
+        }
+
+        h3 {
+            color: #1e40af;
+        }
+
+        pre {
+            background: #0f172a;
+            color: #e2e8f0;
+            padding: 18px;
+            border-radius: 8px;
+            overflow-x: auto;
+        }
+
+        code {
+            font-family: Consolas, monospace;
+        }
+
+        .important {
+            background: #eff6ff;
+            border-left: 5px solid #2563eb;
+            padding: 12px 16px;
+            margin: 15px 0;
+        }
+
+        .warning {
+            background: #fff7ed;
+            border-left: 5px solid #f97316;
+            padding: 12px 16px;
+            margin: 15px 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+        }
+
+        th, td {
+            border: 1px solid #cbd5e1;
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background: #dbeafe;
+        }
+
+        li {
+            margin-bottom: 7px;
+        }
+
+        footer {
+            text-align: center;
+            background: #172554;
+            color: white;
+            padding: 20px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>CCS 121</h1>
+    <h2 style="color:white; border: none;">INTRODUCTION TO PROGRAMMING</h2>
+    <p>Pascal Programming Language - Study Notes</p>
+</header>
+
+<main>
+
+<section>
+    <h2>1. Introduction to Programming</h2>
+
+    <h3>1.1 Meaning of Programming</h3>
+    <p>
+        Programming is the process of writing instructions that tell a
+        computer how to perform a particular task. These instructions
+        are written using a programming language.
+    </p>
+
+    <h3>1.2 What is a Program?</h3>
+    <p>
+        A program is a sequence of instructions written to enable a
+        computer to solve a problem or perform a specific task.
+    </p>
+
+    <h3>1.3 What is Pascal?</h3>
+    <p>
+        Pascal is a high-level, structured programming language
+        developed by Niklaus Wirth. It is commonly used for teaching
+        programming concepts such as variables, control structures,
+        procedures, functions and arrays.
+    </p>
+
+    <h3>1.4 Characteristics of Pascal</h3>
+    <ul>
+        <li>It is a high-level programming language.</li>
+        <li>It supports structured programming.</li>
+        <li>It uses clearly defined data types.</li>
+        <li>It supports procedures and functions.</li>
+        <li>It supports arrays and other data structures.</li>
+        <li>Its syntax encourages organized programs.</li>
+    </ul>
+</section>
+
+<section>
+    <h2>2. Structure of a Pascal Program</h2>
+
+    <p>
+        A Pascal program follows a structured arrangement of
+        declarations and instructions.
+    </p>
+
+    <h3>Example</h3>
+
+<pre><code>program HelloWorld;
+
+begin
+    writeln('Hello World');
+end.</code></pre>
+
+    <h3>Explanation</h3>
+    <ul>
+        <li><b>program HelloWorld;</b> - Gives the program its name.</li>
+        <li><b>begin</b> - Marks the beginning of the main program block.</li>
+        <li><b>writeln</b> - Displays information and moves to a new line.</li>
+        <li><b>end.</b> - Marks the end of the program.</li>
+    </ul>
+
+    <div class="important">
+        <b>Remember:</b> The full stop after the final <code>end.</code>
+        marks the end of a Pascal program.
+    </div>
+</section>
+
+<section>
+    <h2>3. Variables and Constants</h2>
+
+    <h3>3.1 Variables</h3>
+    <p>
+        A variable is a named memory location used to store data.
+        Its value can change while a program is running.
+    </p>
+
+    <h3>Variable declaration</h3>
+
+<pre><code>var
+    age: integer;
+    name: string;
+    marks: real;</code></pre>
+
+    <h3>3.2 Constants</h3>
+    <p>
+        A constant is a named value that does not change during
+        normal program execution.
+    </p>
+
+<pre><code>const
+    Pi = 3.142;
+    University = 'Maseno University';</code></pre>
+
+    <h3>3.3 Rules for Naming Variables</h3>
+    <ul>
+        <li>A name should begin with a letter.</li>
+        <li>It should not contain spaces.</li>
+        <li>It should not be a reserved Pascal keyword.</li>
+        <li>Use meaningful names.</li>
+    </ul>
+</section>
+
+<section>
+    <h2>4. Data Types in Pascal</h2>
+
+    <p>
+        A data type determines the kind of value that a variable
+        can store.
+    </p>
+
+    <table>
+        <tr>
+            <th>Data type</th>
+            <th>Description</th>
+            <th>Example</th>
+        </tr>
+        <tr>
+            <td>Integer</td>
+            <td>Whole numbers</td>
+            <td>25, -10</td>
+        </tr>
+        <tr>
+            <td>Real</td>
+            <td>Numbers with decimal parts</td>
+            <td>12.5, 3.14</td>
+        </tr>
+        <tr>
+            <td>Char</td>
+            <td>A single character</td>
+            <td>'A', 'B'</td>
+        </tr>
+        <tr>
+            <td>String</td>
+            <td>A sequence of characters</td>
+            <td>'Pascal'</td>
+        </tr>
+        <tr>
+            <td>Boolean</td>
+            <td>Logical values</td>
+            <td>True, False</td>
+        </tr>
+    </table>
+
+    <h3>Example</h3>
+
+<pre><code>var
+    age: integer;
+    average: real;
+    grade: char;
+    passed: boolean;
+
+begin
+    age := 20;
+    average := 75.5;
+    grade := 'A';
+    passed := true;
+end.</code></pre>
+
+    <div class="important">
+        The assignment operator in Pascal is <code>:=</code>.
+        For example, <code>age := 20;</code> assigns 20 to age.
+    </div>
+</section>
+
+<section>
+    <h2>5. Input and Output Statements</h2>
+
+    <h3>5.1 Output using Write and Writeln</h3>
+    <p>
+        The <code>write</code> and <code>writeln</code> statements
+        display information on the screen.
+    </p>
+
+<pre><code>begin
+    write('Welcome');
+    writeln(' to Pascal programming');
+end.</code></pre>
+
+    <h3>5.2 Input using Read and Readln</h3>
+    <p>
+        The <code>read</code> and <code>readln</code> statements
+        receive information entered by the user.
+    </p>
+
+<pre><code>program StudentAge;
+
+var
+    age: integer;
+
+begin
+    writeln('Enter your age:');
+    readln(age);
+
+    writeln('Your age is ', age);
+end.</code></pre>
+</section>
+
+<section>
+    <h2>6. Operators and Expressions</h2>
+
+    <p>
+        Operators are symbols used to perform calculations,
+        comparisons and logical operations.
+    </p>
+
+    <h3>6.1 Arithmetic Operators</h3>
+
+    <table>
+        <tr>
+            <th>Operator</th>
+            <th>Meaning</th>
+            <th>Example</th>
+        </tr>
+        <tr><td>+</td><td>Addition</td><td>5 + 3 = 8</td></tr>
+        <tr><td>-</td><td>Subtraction</td><td>5 - 3 = 2</td></tr>
+        <tr><td>*</td><td>Multiplication</td><td>5 * 3 = 15</td></tr>
+        <tr><td>/</td><td>Division</td><td>6 / 3 = 2</td></tr>
+        <tr><td>div</td><td>Integer division</td><td>7 div 2 = 3</td></tr>
+        <tr><td>mod</td><td>Remainder</td><td>7 mod 2 = 1</td></tr>
+    </table>
+
+    <h3>6.2 Relational Operators</h3>
+    <ul>
+        <li><code>=</code> Equal to</li>
+        <li><code>&lt;&gt;</code> Not equal to</li>
+        <li><code>&lt;</code> Less than</li>
+        <li><code>&gt;</code> Greater than</li>
+        <li><code>&lt;=</code> Less than or equal to</li>
+        <li><code>&gt;=</code> Greater than or equal to</li>
+    </ul>
+
+    <h3>6.3 Logical Operators</h3>
+    <ul>
+        <li><code>and</code> - True when both conditions are true.</li>
+        <li><code>or</code> - True when at least one condition is true.</li>
+        <li><code>not</code> - Reverses a logical value.</li>
+    </ul>
+</section>
+
+<section>
+    <h2>7. Control Structures</h2>
+
+    <p>
+        Control structures determine the order in which instructions
+        are executed in a program.
+    </p>
+
+    <h3>7.1 Sequence</h3>
+    <p>
+        Instructions are executed one after another in the order
+        in which they appear.
+    </p>
+
+    <h3>7.2 Selection - If Statement</h3>
+
+<pre><code>program CheckAge;
+
+var
+    age: integer;
+
+begin
+    writeln('Enter age:');
+    readln(age);
+
+    if age >= 18 then
+        writeln('Adult')
+    else
+        writeln('Below 18');
+end.</code></pre>
+
+    <h3>7.3 Case Statement</h3>
+
+<pre><code>program GradeChoice;
+
+var
+    grade: char;
+
+begin
+    writeln('Enter grade:');
+    readln(grade);
+
+    case grade of
+        'A': writeln('Excellent');
+        'B': writeln('Very Good');
+        'C': writeln('Good');
+    else
+        writeln('Other grade');
+    end;
+end.</code></pre>
+
+    <h3>7.4 Repetition - For Loop</h3>
+
+<pre><code>program Counting;
+
+var
+    i: integer;
+
+begin
+    for i := 1 to 5 do
+        writeln(i);
+end.</code></pre>
+
+    <h3>7.5 While Loop</h3>
+
+<pre><code>program WhileExample;
+
+var
+    i: integer;
+
+begin
+    i := 1;
+
+    while i <= 5 do
+    begin
+        writeln(i);
+        i := i + 1;
+    end;
+end.</code></pre>
+
+    <h3>7.6 Repeat Until Loop</h3>
+
+<pre><code>program RepeatExample;
+
+var
+    i: integer;
+
+begin
+    i := 1;
+
+    repeat
+        writeln(i);
+        i := i + 1;
+    until i > 5;
+end.</code></pre>
+</section>
+
+<section>
+    <h2>8. Arrays in Pascal</h2>
+
+    <div class="important">
+        <b>Important topic:</b> Arrays allow a programmer to store
+        several values of the same data type under one variable name.
+    </div>
+
+    <h3>8.1 Definition of an Array</h3>
+    <p>
+        An array is a collection of elements of the same data type,
+        stored under one identifier and accessed using index values.
+    </p>
+
+    <h3>8.2 Why Arrays Are Used</h3>
+    <ul>
+        <li>To store many related values.</li>
+        <li>To reduce the number of separate variables.</li>
+        <li>To make processing of data easier.</li>
+        <li>To make sorting and searching easier.</li>
+    </ul>
+
+    <h3>8.3 Declaring an Array</h3>
+
+<pre><code>var
+    marks: array[1..5] of integer;</code></pre>
+
+    <p>Explanation:</p>
+    <ul>
+        <li><code>marks</code> is the array name.</li>
+        <li><code>1..5</code> specifies the index range.</li>
+        <li><code>integer</code> specifies the data type.</li>
+    </ul>
+
+    <p>
+        This declaration creates five integer elements:
+        marks[1], marks[2], marks[3], marks[4] and marks[5].
+    </p>
+
+    <h3>8.4 Assigning Values to Array Elements</h3>
+
+<pre><code>program ArrayExample;
+
+var
+    marks: array[1..5] of integer;
+
+begin
+    marks[1] := 70;
+    marks[2] := 65;
+    marks[3] := 80;
+    marks[4] := 55;
+    marks[5] := 90;
+
+    writeln(marks[1]);
+end.</code></pre>
+
+    <h3>8.5 Accessing Array Elements Using a Loop</h3>
+
+<pre><code>program DisplayMarks;
+
+var
+    marks: array[1..5] of integer;
+    i: integer;
+
+begin
+    for i := 1 to 5 do
+    begin
+        writeln('Enter mark:');
+        readln(marks[i]);
+    end;
+
+    writeln('The marks are:');
+
+    for i := 1 to 5 do
+        writeln(marks[i]);
+end.</code></pre>
+
+    <h3>8.6 Finding the Sum of Array Elements</h3>
+
+<pre><code>program SumArray;
+
+var
+    numbers: array[1..5] of integer;
+    i, total: integer;
+
+begin
+    total := 0;
+
+    for i := 1 to 5 do
+    begin
+        writeln('Enter a number:');
+        readln(numbers[i]);
+
+        total := total + numbers[i];
+    end;
+
+    writeln('Sum = ', total);
+end.</code></pre>
+
+    <p><b>Explanation:</b></p>
+    <ol>
+        <li>An array named numbers is declared.</li>
+        <li>The variable total is initialized to zero.</li>
+        <li>A loop accepts five numbers.</li>
+        <li>Each number is added to total.</li>
+        <li>The final sum is displayed.</li>
+    </ol>
+
+    <h3>8.7 Finding the Average of Array Elements</h3>
+
+<pre><code>program AverageArray;
+
+var
+    numbers: array[1..5] of real;
+    i: integer;
+    total, average: real;
+
+begin
+    total := 0;
+
+    for i := 1 to 5 do
+    begin
+        writeln('Enter a number:');
+        readln(numbers[i]);
+
+        total := total + numbers[i];
+    end;
+
+    average := total / 5;
+
+    writeln('Average = ', average:0:2);
+end.</code></pre>
+
+    <h3>8.8 Finding the Largest Element</h3>
+
+<pre><code>program LargestNumber;
+
+var
+    numbers: array[1..5] of integer;
+    i, largest: integer;
+
+begin
+    for i := 1 to 5 do
+    begin
+        writeln('Enter a number:');
+        readln(numbers[i]);
+    end;
+
+    largest := numbers[1];
+
+    for i := 2 to 5 do
+    begin
+        if numbers[i] > largest then
+            largest := numbers[i];
+    end;
+
+    writeln('Largest number = ', largest);
+end.</code></pre>
+
+    <h3>8.9 One-Dimensional Arrays</h3>
+    <p>
+        A one-dimensional array stores elements in a single sequence.
+        Each element is accessed using one index.
+    </p>
+
+<pre><code>var
+    ages: array[1..10] of integer;</code></pre>
+
+    <h3>8.10 Two-Dimensional Arrays</h3>
+    <p>
+        A two-dimensional array stores data in rows and columns.
+        It uses two indices to access an element.
+    </p>
+
+<pre><code>var
+    matrix: array[1..3, 1..3] of integer;</code></pre>
+
+    <p>For example:</p>
+
+<pre><code>matrix[1,1] := 10;
+matrix[1,2] := 20;
+matrix[2,1] := 30;</code></pre>
+
+    <h3>8.11 Traversing a Two-Dimensional Array</h3>
+
+<pre><code>program MatrixInput;
+
+var
+    matrix: array[1..3, 1..3] of integer;
+    i, j: integer;
+
+begin
+    for i := 1 to 3 do
+    begin
+        for j := 1 to 3 do
+        begin
+            writeln('Enter an element:');
+            readln(matrix[i,j]);
+        end;
+    end;
+
+    for i := 1 to 3 do
+    begin
+        for j := 1 to 3 do
+            write(matrix[i,j], ' ');
+
+        writeln;
+    end;
+end.</code></pre>
+
+    <h3>8.12 Important Array Terms</h3>
+    <ul>
+        <li><b>Element:</b> An individual value stored in an array.</li>
+        <li><b>Index:</b> The position used to access an element.</li>
+        <li><b>Subscript:</b> The index expression identifying an element.</li>
+        <li><b>Traversal:</b> Visiting array elements one by one.</li>
+        <li><b>Array bounds:</b> The permitted range of index values.</li>
+    </ul>
+
+    <div class="warning">
+        <b>Important:</b> Accessing an index outside the declared
+        array bounds is an error. For example, an array declared as
+        <code>array[1..5]</code> should not be accessed using
+        <code>marks[6]</code>.
+    </div>
+</section>
+
+<section>
+    <h2>9. Procedures and Functions</h2>
+
+    <h3>9.1 Procedures</h3>
+    <p>
+        A procedure is a named block of code that performs a
+        particular task. It does not return a value as its result.
+    </p>
+
+<pre><code>program ProcedureExample;
+
+procedure Greet;
+begin
+    writeln('Welcome to Pascal');
+end;
+
+begin
+    Greet;
+end.</code></pre>
+
+    <h3>9.2 Functions</h3>
+    <p>
+        A function is a named block of code that performs a task
+        and returns a value.
+    </p>
+
+<pre><code>program FunctionExample;
+
+function Add(a, b: integer): integer;
+begin
+    Add := a + b;
+end;
+
+begin
+    writeln(Add(5, 3));
+end.</code></pre>
+
+    <h3>Difference Between Procedures and Functions</h3>
+
+    <table>
+        <tr>
+            <th>Procedure</th>
+            <th>Function</th>
+        </tr>
+        <tr>
+            <td>Performs a task.</td>
+            <td>Performs a task and returns a value.</td>
+        </tr>
+        <tr>
+            <td>Does not have a return type.</td>
+            <td>Has a declared return type.</td>
+        </tr>
+        <tr>
+            <td>Called as a statement.</td>
+            <td>Can be used in expressions.</td>
+        </tr>
+    </table>
+</section>
+
+<section>
+    <h2>10. Practice Questions</h2>
+
+    <h3>Short Answer Questions</h3>
+    <ol>
+        <li>Define computer programming.</li>
+        <li>What is Pascal?</li>
+        <li>State four characteristics of Pascal.</li>
+        <li>Differentiate between a variable and a constant.</li>
+        <li>What is a data type?</li>
+        <li>State the purpose of the writeln statement.</li>
+        <li>Differentiate between div and mod.</li>
+        <li>What is an array?</li>
+        <li>State four advantages of using arrays.</li>
+        <li>Differentiate between one-dimensional and two-dimensional arrays.</li>
+        <li>Define array traversal.</li>
+        <li>Differentiate between a procedure and a function.</li>
+    </ol>
+
+    <h3>Programming Exercises</h3>
+    <ol>
+        <li>
+            Write a Pascal program that accepts two numbers and
+            displays their sum.
+        </li>
+        <li>
+            Write a program that determines whether an integer
+            is even or odd.
+        </li>
+        <li>
+            Write a program that displays numbers from 1 to 20
+            using a for loop.
+        </li>
+        <li>
+            Write a program that stores five student marks in an
+            array and displays them.
+        </li>
+        <li>
+            Write a program that calculates the sum of ten numbers
+            stored in an array.
+        </li>
+        <li>
+            Write a program that finds the largest number in an
+            array of ten integers.
+        </li>
+        <li>
+            Write a program that accepts elements of a 3 by 3
+            matrix and displays them in rows and columns.
+        </li>
+    </ol>
+</section>
+
+<section>
+    <h2>11. Selected Answers</h2>
+
+    <h3>Question 1: Difference between div and mod</h3>
+<pre><code>17 div 5 = 3
+17 mod 5 = 2</code></pre>
+
+    <p>
+        <code>div</code> gives the integer quotient, while
+        <code>mod</code> gives the remainder.
+    </p>
+
+    <h3>Question 2: Check whether a number is even or odd</h3>
+<pre><code>program EvenOdd;
+
+var
+    number: integer;
+
+begin
+    writeln('Enter a number:');
+    readln(number);
+
+    if number mod 2 = 0 then
+        writeln('Even number')
+    else
+        writeln('Odd number');
+end.</code></pre>
+
+    <h3>Question 3: Display numbers from 1 to 20</h3>
+<pre><code>program DisplayNumbers;
+
+var
+    i: integer;
+
+begin
+    for i := 1 to 20 do
+        writeln(i);
+end.</code></pre>
+</section>
+
+<section>
+    <h2>12. Revision Summary</h2>
+
+    <ul>
+        <li>Programming involves writing instructions for a computer.</li>
+        <li>Pascal is a structured high-level programming language.</li>
+        <li>Variables store values that can change.</li>
+        <li>Constants represent values that remain fixed.</li>
+        <li>Data types define the kind of values stored.</li>
+        <li>Loops allow instructions to be repeated.</li>
+        <li>Selection statements allow decisions in a program.</li>
+        <li>Arrays store multiple values of the same data type.</li>
+        <li>Procedures and functions help organize programs.</li>
+    </ul>
+</section>
+
+</main>
+
+<footer>
+    <p>Aldin's Study Hub | CCS 121</p>
+    <p>Introduction to Programming - Pascal</p>
+</footer>
+
+</body>
+</html>

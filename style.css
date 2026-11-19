@@ -1,0 +1,105 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #0f172a, #1e3a8a);
+    color: white;
+    display: flex;
+    align-items:center ;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.login-box {
+    background: #1e293b;
+    padding: 40px;
+    border-radius: 20px;
+    width: 320px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+.login-box h1 {
+    color: #60a5fa;
+    font-size: 26px;
+}
+
+.login-box p {
+    color: #cbd5e1;
+    line-height: 1.5;
+}
+
+input {
+    width: 100%;
+    padding: 13px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    border: 1px solid #475569;
+    border-radius: 7px;
+    background: #0f172a;
+    color: white;
+}
+
+button {
+    width: 100%;
+    padding: 13px;
+    margin-top: 12px;
+    background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background: #3b82f6;
+}
+
+/* Dashboard styling */
+
+.dashboard {
+    width: 85%;
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 30px;
+    background: #1e293b;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.dashboard h1 {
+    color: #60a5fa;
+    text-align: center;
+}
+
+.dashboard h2 {
+    color: white;
+    margin-top: 30px;
+}
+
+.dashboard p {
+    color: #cbd5e1;
+    text-align: center;
+}
+
+.units {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.unit {
+    background: #334155;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.unit:hover {
+    background: #2563eb;
+    transform: translateY(-3px);
+}

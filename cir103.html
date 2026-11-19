@@ -1,0 +1,968 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CIR 103 - Electrical Principles</title>
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f1f5f9;
+    color: #1e293b;
+    line-height: 1.7;
+}
+
+header {
+    background: #172554;
+    color: white;
+    text-align: center;
+    padding: 35px 15px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 32px;
+}
+
+header h2 {
+    color: white;
+    border: none;
+    margin-bottom: 5px;
+}
+
+header p {
+    color: #bfdbfe;
+}
+
+main {
+    max-width: 1000px;
+    margin: 25px auto;
+    padding: 15px;
+}
+
+section {
+    background: white;
+    padding: 24px;
+    margin-bottom: 22px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.06);
+}
+
+h2 {
+    color: #1d4ed8;
+    border-bottom: 2px solid #dbeafe;
+    padding-bottom: 8px;
+}
+
+h3 {
+    color: #1e40af;
+}
+
+.diagram {
+    background: #f8fafc;
+    border: 1px solid #cbd5e1;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 20px 0;
+    text-align: center;
+    overflow-x: auto;
+}
+
+.diagram svg {
+    max-width: 100%;
+    height: auto;
+}
+
+.diagram p {
+    color: #475569;
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+pre {
+    background: #0f172a;
+    color: #e2e8f0;
+    padding: 18px;
+    border-radius: 8px;
+    overflow-x: auto;
+}
+
+code {
+    font-family: Consolas, monospace;
+}
+
+.important {
+    background: #eff6ff;
+    border-left: 5px solid #2563eb;
+    padding: 12px 16px;
+    margin: 15px 0;
+}
+
+.warning {
+    background: #fff7ed;
+    border-left: 5px solid #f97316;
+    padding: 12px 16px;
+    margin: 15px 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 15px 0;
+}
+
+th, td {
+    border: 1px solid #cbd5e1;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background: #dbeafe;
+}
+
+li {
+    margin-bottom: 7px;
+}
+
+.formula {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: #1d4ed8;
+    padding: 12px;
+}
+
+footer {
+    background: #172554;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+@media (max-width: 600px) {
+    section {
+        padding: 16px;
+    }
+
+    table {
+        font-size: 13px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>CIR 103</h1>
+    <h2>ELECTRICAL PRINCIPLES</h2>
+    <p>University Study Notes | Aldin's Study Hub</p>
+</header>
+
+<main>
+
+<section>
+<h2>1. Introduction to Electrical Principles</h2>
+
+<h3>1.1 Meaning of Electricity</h3>
+<p>
+Electricity is a form of energy associated with electric charges.
+It is used in lighting, communication, computing, transportation
+and many industrial applications.
+</p>
+
+<h3>1.2 Electric Charge</h3>
+<p>
+Electric charge is a fundamental property of matter responsible
+for electrical forces. There are two types of electric charge:
+</p>
+<ul>
+<li>Positive charge.</li>
+<li>Negative charge.</li>
+</ul>
+
+<p>Like charges repel each other, while unlike charges attract.</p>
+
+<h3>1.3 Conductors and Insulators</h3>
+
+<table>
+<tr>
+<th>Conductors</th>
+<th>Insulators</th>
+</tr>
+<tr>
+<td>Allow electric current to flow relatively easily.</td>
+<td>Resist the flow of electric current.</td>
+</tr>
+<tr>
+<td>Copper, aluminium and silver.</td>
+<td>Rubber, glass and dry plastic.</td>
+</tr>
+</table>
+
+<h3>1.4 Basic Electrical Quantities</h3>
+
+<table>
+<tr>
+<th>Quantity</th>
+<th>Symbol</th>
+<th>SI Unit</th>
+</tr>
+<tr><td>Electric charge</td><td>Q</td><td>Coulomb (C)</td></tr>
+<tr><td>Current</td><td>I</td><td>Ampere (A)</td></tr>
+<tr><td>Voltage</td><td>V</td><td>Volt (V)</td></tr>
+<tr><td>Resistance</td><td>R</td><td>Ohm (Ω)</td></tr>
+<tr><td>Power</td><td>P</td><td>Watt (W)</td></tr>
+<tr><td>Energy</td><td>E</td><td>Joule (J)</td></tr>
+</table>
+</section>
+
+<section>
+<h2>2. Electric Current</h2>
+
+<h3>2.1 Definition</h3>
+<p>
+Electric current is the rate of flow of electric charge through
+a conductor.
+</p>
+
+<div class="important">
+<div class="formula">I = Q / t</div>
+Where:
+<ul>
+<li>I = current in amperes (A).</li>
+<li>Q = charge in coulombs (C).</li>
+<li>t = time in seconds (s).</li>
+</ul>
+</div>
+
+<h3>2.2 Worked Example</h3>
+<p>
+A charge of 20 C passes through a conductor in 5 seconds.
+Calculate the current.
+</p>
+
+<pre>
+Given:
+Q = 20 C
+t = 5 s
+
+I = Q / t
+I = 20 / 5
+I = 4 A
+
+Answer: 4 amperes.
+</pre>
+
+<h3>2.3 Types of Current</h3>
+
+<ul>
+<li><b>Direct Current (DC):</b> Current that flows in one direction.</li>
+<li><b>Alternating Current (AC):</b> Current that periodically changes direction.</li>
+</ul>
+
+<div class="diagram">
+<h3>DC and AC Waveforms</h3>
+<svg viewBox="0 0 600 310" width="600" role="img"
+aria-label="Comparison of direct current and alternating current waveforms">
+
+<line x1="55" y1="115" x2="560" y2="115" stroke="#64748b" stroke-width="2"/>
+<line x1="55" y1="35" x2="55" y2="185" stroke="#64748b" stroke-width="2"/>
+<path d="M55 65 L550 65" stroke="#2563eb" stroke-width="4" fill="none"/>
+<text x="65" y="28" font-size="16" fill="#1e293b">DC</text>
+<text x="280" y="95" font-size="13" fill="#1e293b">Time →</text>
+<text x="65" y="205" font-size="13" fill="#475569">Constant current</text>
+
+<line x1="55" y1="260" x2="560" y2="260" stroke="#64748b" stroke-width="2"/>
+<line x1="55" y1="205" x2="55" y2="300" stroke="#64748b" stroke-width="2"/>
+<path d="M55 260
+C95 190 135 190 175 260
+S255 330 295 260
+S375 190 415 260
+S495 330 535 260"
+stroke="#16a34a" stroke-width="4" fill="none"/>
+<text x="65" y="220" font-size="16" fill="#1e293b">AC</text>
+<text x="280" y="300" font-size="13" fill="#1e293b">Time →</text>
+</svg>
+<p>DC remains in one direction. AC alternates between positive and negative values.</p>
+</div>
+</section>
+
+<section>
+<h2>3. Voltage and Potential Difference</h2>
+
+<h3>3.1 Definition</h3>
+<p>
+Voltage, also known as potential difference, is the energy
+transferred or work done per unit electric charge between
+two points.
+</p>
+
+<div class="important">
+<div class="formula">V = W / Q</div>
+<ul>
+<li>V = voltage in volts.</li>
+<li>W = work done in joules.</li>
+<li>Q = charge in coulombs.</li>
+</ul>
+</div>
+
+<h3>3.2 Worked Example</h3>
+<p>
+If 60 joules of energy are transferred by a charge of
+10 coulombs, calculate the voltage.
+</p>
+
+<pre>
+V = W / Q
+V = 60 / 10
+V = 6 V
+
+Answer: 6 volts.
+</pre>
+</section>
+
+<section>
+<h2>4. Electrical Resistance</h2>
+
+<h3>4.1 Definition</h3>
+<p>
+Resistance is the opposition offered by a material to the
+flow of electric current. Its SI unit is the ohm (Ω).
+</p>
+
+<h3>4.2 Factors Affecting Resistance</h3>
+<ul>
+<li><b>Length:</b> Increasing the length generally increases resistance.</li>
+<li><b>Cross-sectional area:</b> Increasing the area generally reduces resistance.</li>
+<li><b>Material:</b> Different materials have different resistivities.</li>
+<li><b>Temperature:</b> Resistance changes with temperature depending on the material.</li>
+</ul>
+
+<h3>4.3 Resistance Formula</h3>
+
+<div class="important">
+<div class="formula">R = ρL / A</div>
+<ul>
+<li>R = resistance in ohms.</li>
+<li>ρ = resistivity in ohm metres (Ωm).</li>
+<li>L = length in metres.</li>
+<li>A = cross-sectional area in square metres.</li>
+</ul>
+</div>
+
+<h3>4.4 Worked Example</h3>
+<p>
+A conductor has a resistivity of 2 × 10⁻⁶ Ωm,
+a length of 4 m and a cross-sectional area of
+2 × 10⁻⁶ m². Find its resistance.
+</p>
+
+<pre>
+R = ρL / A
+
+R = (2 × 10⁻⁶ × 4) / (2 × 10⁻⁶)
+
+R = 4 Ω
+
+Answer: 4 ohms.
+</pre>
+</section>
+
+<section>
+<h2>5. Ohm's Law</h2>
+
+<h3>5.1 Statement</h3>
+<p>
+Ohm's law states that the current flowing through a conductor
+is directly proportional to the potential difference across it,
+provided temperature and other physical conditions remain constant.
+</p>
+
+<div class="important">
+<div class="formula">V = IR</div>
+<ul>
+<li>V = voltage in volts.</li>
+<li>I = current in amperes.</li>
+<li>R = resistance in ohms.</li>
+</ul>
+</div>
+
+<h3>5.2 Ohm's Law Triangle</h3>
+
+<div class="diagram">
+<svg viewBox="0 0 360 220" width="360" role="img"
+aria-label="Ohm's law triangle showing V above I and R">
+
+<path d="M180 20 L40 190 L320 190 Z"
+fill="#dbeafe" stroke="#1d4ed8" stroke-width="4"/>
+<path d="M110 105 L250 105" stroke="#1d4ed8" stroke-width="3"/>
+<text x="180" y="85" text-anchor="middle"
+font-size="36" font-weight="bold" fill="#1e40af">V</text>
+<text x="110" y="160" text-anchor="middle"
+font-size="32" font-weight="bold" fill="#1e40af">I</text>
+<text x="250" y="160" text-anchor="middle"
+font-size="32" font-weight="bold" fill="#1e40af">R</text>
+</svg>
+<p>Cover the quantity you want to calculate to identify the required formula.</p>
+</div>
+
+<p>The three forms are:</p>
+<ul>
+<li>V = I × R</li>
+<li>I = V / R</li>
+<li>R = V / I</li>
+</ul>
+
+<h3>5.3 Worked Example</h3>
+<p>
+A resistor of 6 Ω is connected across a 12 V supply.
+Calculate the current.
+</p>
+
+<pre>
+Given:
+V = 12 V
+R = 6 Ω
+
+I = V / R
+I = 12 / 6
+I = 2 A
+
+Answer: 2 amperes.
+</pre>
+</section>
+
+<section>
+<h2>6. Electrical Circuits</h2>
+
+<h3>6.1 Meaning of an Electric Circuit</h3>
+<p>
+An electric circuit is a complete conducting path through which
+electric current can flow. A simple circuit may contain a
+power source, connecting wires, a switch and a load.
+</p>
+
+<h3>6.2 Simple Electric Circuit</h3>
+
+<div class="diagram">
+<h3>Basic Circuit Diagram</h3>
+
+<svg viewBox="0 0 600 300" width="600" role="img"
+aria-label="Simple circuit containing a battery, switch and resistor">
+
+<g stroke="#1e293b" stroke-width="4" fill="none">
+<path d="M100 80 H210"/>
+<path d="M280 80 H450 V220 H100 V80"/>
+<path d="M210 80 L270 45"/>
+<path d="M100 80 V125"/>
+<path d="M100 175 V220"/>
+<path d="M88 125 H112"/>
+<path d="M78 175 H122"/>
+<path d="M450 80 V115"/>
+<path d="M450 185 V220"/>
+<path d="M430 115 L470 115 L450 185 Z"/>
+</g>
+
+<circle cx="210" cy="80" r="5" fill="#1e293b"/>
+<circle cx="280" cy="80" r="5" fill="#1e293b"/>
+
+<text x="235" y="30" font-size="15" text-anchor="middle">Switch</text>
+<text x="100" y="255" font-size="15" text-anchor="middle">Battery</text>
+<text x="450" y="255" font-size="15" text-anchor="middle">Resistor</text>
+<text x="300" y="280" font-size="13" text-anchor="middle" fill="#475569">Connecting wires complete the circuit</text>
+</svg>
+<p>A closed circuit provides a complete path for current to flow.</p>
+</div>
+
+<h3>6.3 Open and Closed Circuits</h3>
+<ul>
+<li><b>Closed circuit:</b> The conducting path is complete and current can flow.</li>
+<li><b>Open circuit:</b> The path is broken and current does not flow.</li>
+</ul>
+</section>
+
+<section>
+<h2>7. Series Circuits</h2>
+
+<h3>7.1 Definition</h3>
+<p>
+A series circuit is a circuit in which components are connected
+one after another, forming a single path for current.
+</p>
+
+<div class="diagram">
+<h3>Series Circuit Diagram</h3>
+<svg viewBox="0 0 600 220" width="600" role="img"
+aria-label="Three resistors connected in series">
+
+<g stroke="#1e293b" stroke-width="3" fill="none">
+<path d="M60 100 H140"/>
+<path d="M210 100 H270"/>
+<path d="M340 100 H400"/>
+<path d="M470 100 H540 V180 H60 V100"/>
+<rect x="140" y="82" width="70" height="36" rx="4" fill="#dbeafe"/>
+<rect x="270" y="82" width="70" height="36" rx="4" fill="#dbeafe"/>
+<rect x="400" y="82" width="70" height="36" rx="4" fill="#dbeafe"/>
+</g>
+<text x="175" y="105" text-anchor="middle" font-size="16">R1</text>
+<text x="305" y="105" text-anchor="middle" font-size="16">R2</text>
+<text x="435" y="105" text-anchor="middle" font-size="16">R3</text>
+<text x="300" y="35" text-anchor="middle" font-size="17" fill="#1d4ed8">Single current path</text>
+<text x="300" y="207" text-anchor="middle" font-size="13">Illustrative series connection</text>
+</svg>
+</div>
+
+<h3>7.2 Characteristics of Series Circuits</h3>
+<ul>
+<li>The same current flows through every component.</li>
+<li>The supply voltage is shared between components.</li>
+<li>The total resistance is the sum of individual resistances.</li>
+<li>If one component breaks the circuit, current stops flowing throughout the circuit.</li>
+</ul>
+
+<h3>7.3 Total Resistance in Series</h3>
+
+<div class="important">
+<div class="formula">Rₜ = R₁ + R₂ + R₃ + ...</div>
+</div>
+
+<h3>7.4 Worked Example</h3>
+<p>
+Three resistors of 2 Ω, 4 Ω and 6 Ω are connected in series.
+Find the total resistance.
+</p>
+
+<pre>
+Rₜ = R₁ + R₂ + R₃
+
+Rₜ = 2 + 4 + 6
+
+Rₜ = 12 Ω
+
+Answer: 12 ohms.
+</pre>
+</section>
+
+<section>
+<h2>8. Parallel Circuits</h2>
+
+<h3>8.1 Definition</h3>
+<p>
+A parallel circuit is a circuit in which components are connected
+across the same two electrical nodes, providing separate paths
+for current.
+</p>
+
+<div class="diagram">
+<h3>Parallel Circuit Diagram</h3>
+<svg viewBox="0 0 600 280" width="600" role="img"
+aria-label="Three resistors connected in parallel">
+
+<g stroke="#1e293b" stroke-width="3" fill="none">
+<path d="M90 45 H510"/>
+<path d="M90 235 H510"/>
+<path d="M90 45 V235"/>
+<path d="M510 45 V235"/>
+<path d="M200 45 V105"/>
+<path d="M200 165 V235"/>
+<path d="M350 45 V105"/>
+<path d="M350 165 V235"/>
+<path d="M460 45 V105"/>
+<path d="M460 165 V235"/>
+<rect x="165" y="105" width="70" height="60" rx="4" fill="#dbeafe"/>
+<rect x="315" y="105" width="70" height="60" rx="4" fill="#dbeafe"/>
+<rect x="425" y="105" width="70" height="60" rx="4" fill="#dbeafe"/>
+</g>
+<text x="200" y="140" text-anchor="middle" font-size="16">R1</text>
+<text x="350" y="140" text-anchor="middle" font-size="16">R2</text>
+<text x="460" y="140" text-anchor="middle" font-size="16">R3</text>
+<text x="300" y="25" text-anchor="middle" font-size="15">Top node</text>
+<text x="300" y="265" text-anchor="middle" font-size="15">Bottom node</text>
+</svg>
+<p>Each resistor has its own branch between the same two nodes.</p>
+</div>
+
+<h3>8.2 Characteristics of Parallel Circuits</h3>
+<ul>
+<li>The voltage across each branch is the same.</li>
+<li>The total current is the sum of the branch currents.</li>
+<li>Current divides between the branches.</li>
+<li>If one branch is interrupted, other branches may still operate.</li>
+</ul>
+
+<h3>8.3 Total Resistance in Parallel</h3>
+
+<div class="important">
+<div class="formula">1/Rₜ = 1/R₁ + 1/R₂ + 1/R₃ + ...</div>
+</div>
+
+<h3>8.4 Worked Example</h3>
+<p>
+Two resistors of 6 Ω and 3 Ω are connected in parallel.
+Find their equivalent resistance.
+</p>
+
+<pre>
+1/Rₜ = 1/R₁ + 1/R₂
+
+1/Rₜ = 1/6 + 1/3
+
+1/Rₜ = 1/6 + 2/6
+
+1/Rₜ = 3/6 = 1/2
+
+Rₜ = 2 Ω
+
+Answer: 2 ohms.
+</pre>
+</section>
+
+<section>
+<h2>9. Kirchhoff's Laws</h2>
+
+<h3>9.1 Kirchhoff's Current Law (KCL)</h3>
+<p>
+Kirchhoff's Current Law states that the total current entering
+a junction equals the total current leaving that junction.
+</p>
+
+<div class="diagram">
+<h3>Current at a Junction</h3>
+<svg viewBox="0 0 500 230" width="500" role="img"
+aria-label="Junction with two incoming currents and two outgoing currents">
+
+<circle cx="250" cy="115" r="12" fill="#2563eb"/>
+<g stroke="#1e293b" stroke-width="4" fill="none">
+<path d="M45 115 H238"/>
+<path d="M262 115 H455"/>
+<path d="M250 20 V103"/>
+<path d="M250 127 V210"/>
+</g>
+<g fill="#1d4ed8" font-size="16">
+<text x="65" y="95">I1 = 5 A</text>
+<text x="270" y="95">I3 = 3 A</text>
+<text x="265" y="40">I2 = 2 A</text>
+<text x="265" y="205">I4 = 4 A</text>
+</g>
+</svg>
+<p>Illustrative junction: the current values must satisfy conservation of charge.</p>
+</div>
+
+<div class="important">
+<strong>Formula:</strong>
+<br>
+ΣI entering = ΣI leaving
+</div>
+
+<h3>9.2 Worked Example</h3>
+<p>
+A junction has 5 A entering and two currents of 2 A and
+3 A leaving. Verify Kirchhoff's Current Law.
+</p>
+
+<pre>
+Entering current = 5 A
+
+Leaving current = 2 + 3
+                = 5 A
+
+Therefore:
+5 A = 5 A
+
+The law is satisfied.
+</pre>
+
+<h3>9.3 Kirchhoff's Voltage Law (KVL)</h3>
+<p>
+Kirchhoff's Voltage Law states that the algebraic sum of
+all voltage rises and voltage drops around a closed circuit
+is zero.
+</p>
+
+<div class="important">
+<div class="formula">ΣV = 0</div>
+</div>
+
+<p>
+For a simple loop, the supply voltage equals the sum of the
+voltage drops across the components.
+</p>
+</section>
+
+<section>
+<h2>10. Electrical Power and Energy</h2>
+
+<h3>10.1 Electrical Power</h3>
+<p>
+Electrical power is the rate at which electrical energy is
+transferred or converted.
+</p>
+
+<div class="important">
+<div class="formula">P = VI</div>
+Other useful forms:
+<ul>
+<li>P = I²R</li>
+<li>P = V²/R</li>
+</ul>
+</div>
+
+<h3>10.2 Worked Example</h3>
+<p>
+A device operates at 12 V and draws a current of 2 A.
+Calculate its power.
+</p>
+
+<pre>
+P = VI
+
+P = 12 × 2
+
+P = 24 W
+
+Answer: 24 watts.
+</pre>
+
+<h3>10.3 Electrical Energy</h3>
+<p>
+Electrical energy is the total amount of work done or energy
+transferred over a period of time.
+</p>
+
+<div class="important">
+<div class="formula">E = Pt</div>
+<ul>
+<li>E = energy in joules.</li>
+<li>P = power in watts.</li>
+<li>t = time in seconds.</li>
+</ul>
+</div>
+
+<h3>10.4 Worked Example</h3>
+<p>
+A 100 W lamp operates for 10 seconds. Calculate the energy used.
+</p>
+
+<pre>
+E = Pt
+
+E = 100 × 10
+
+E = 1000 J
+
+Answer: 1000 joules.
+</pre>
+</section>
+
+<section>
+<h2>11. Common Electrical Circuit Symbols</h2>
+
+<div class="diagram">
+<svg viewBox="0 0 600 390" width="600" role="img"
+aria-label="Educational chart of common electrical circuit symbols">
+
+<g stroke="#1e293b" stroke-width="3" fill="none">
+<!-- Wire -->
+<path d="M30 45 H120"/>
+<!-- Resistor -->
+<path d="M210 45 H235 L245 30 L265 60 L285 30 L305 60 L315 45 H345"/>
+<!-- Lamp -->
+<path d="M425 45 H455 M495 45 H535"/>
+<circle cx="475" cy="45" r="20"/>
+<path d="M461 31 L489 59 M489 31 L461 59"/>
+<!-- Battery -->
+<path d="M70 125 V155 M55 155 H85 M60 165 H80 M70 165 V195"/>
+<!-- Switch -->
+<path d="M220 145 H255 M290 145 H325 M255 145 L285 120"/>
+<!-- Capacitor -->
+<path d="M420 125 H465 M465 105 V165 M480 105 V165 M480 125 H530"/>
+<!-- Ground -->
+<path d="M100 230 V260 M75 260 H125 M83 270 H117 M92 280 H108"/>
+<!-- Diode -->
+<path d="M220 250 H260 M260 230 L295 250 L260 270 Z M300 230 V270 M300 250 H340"/>
+<!-- Inductor -->
+<path d="M410 250 H430
+C430 220 455 220 455 250
+C455 220 480 220 480 250
+C480 220 505 220 505 250
+H535"/>
+</g>
+
+<g fill="#1e293b" font-size="14">
+<text x="30" y="80">Wire</text>
+<text x="220" y="80">Resistor</text>
+<text x="440" y="80">Lamp</text>
+<text x="40" y="210">Cell / battery</text>
+<text x="230" y="180">Open switch</text>
+<text x="420" y="180">Capacitor</text>
+<text x="65" y="305">Ground</text>
+<text x="245" y="305">Diode</text>
+<text x="440" y="305">Inductor</text>
+</g>
+</svg>
+<p>Simplified educational representations of common circuit symbols. Symbol conventions may vary slightly by standard.</p>
+</div>
+</section>
+
+<section>
+<h2>12. Measuring Electrical Quantities</h2>
+
+<table>
+<tr>
+<th>Instrument</th>
+<th>Measures</th>
+<th>Connection</th>
+</tr>
+<tr>
+<td>Ammeter</td>
+<td>Electric current</td>
+<td>In series</td>
+</tr>
+<tr>
+<td>Voltmeter</td>
+<td>Potential difference</td>
+<td>In parallel</td>
+</tr>
+<tr>
+<td>Ohmmeter</td>
+<td>Resistance</td>
+<td>Across an isolated component</td>
+</tr>
+<tr>
+<td>Multimeter</td>
+<td>Several electrical quantities</td>
+<td>Depends on selected mode</td>
+</tr>
+</table>
+
+<div class="warning">
+Electrical measurements should be performed using appropriate
+equipment and safe procedures. Never measure resistance on
+an energized circuit.
+</div>
+</section>
+
+<section>
+<h2>13. Practice Questions</h2>
+
+<h3>Part A: Short Answer Questions</h3>
+<ol>
+<li>Define electric current.</li>
+<li>What is the SI unit of electric charge?</li>
+<li>Differentiate between AC and DC.</li>
+<li>Define electrical resistance.</li>
+<li>State Ohm's law.</li>
+<li>What is the difference between a series and parallel circuit?</li>
+<li>State Kirchhoff's Current Law.</li>
+<li>State Kirchhoff's Voltage Law.</li>
+<li>Define electrical power.</li>
+<li>What is the function of an ammeter?</li>
+</ol>
+
+<h3>Part B: Calculation Questions</h3>
+<ol>
+<li>A charge of 30 C flows in 10 seconds. Calculate the current.</li>
+<li>A 24 V supply is connected to a 12 Ω resistor. Calculate the current.</li>
+<li>Three resistors of 3 Ω, 5 Ω and 7 Ω are connected in series. Find total resistance.</li>
+<li>Two resistors of 4 Ω and 4 Ω are connected in parallel. Find equivalent resistance.</li>
+<li>A device operates at 20 V and draws 3 A. Calculate its power.</li>
+<li>A 60 W lamp operates for 5 seconds. Calculate the energy used.</li>
+</ol>
+</section>
+
+<section>
+<h2>14. Selected Answers</h2>
+
+<h3>Question 1</h3>
+<pre>
+I = Q / t
+I = 30 / 10
+I = 3 A
+</pre>
+
+<h3>Question 2</h3>
+<pre>
+I = V / R
+I = 24 / 12
+I = 2 A
+</pre>
+
+<h3>Question 3</h3>
+<pre>
+Rₜ = 3 + 5 + 7
+Rₜ = 15 Ω
+</pre>
+
+<h3>Question 4</h3>
+<pre>
+1/Rₜ = 1/4 + 1/4
+1/Rₜ = 2/4
+Rₜ = 2 Ω
+</pre>
+
+<h3>Question 5</h3>
+<pre>
+P = VI
+P = 20 × 3
+P = 60 W
+</pre>
+
+<h3>Question 6</h3>
+<pre>
+E = Pt
+E = 60 × 5
+E = 300 J
+</pre>
+</section>
+
+<section>
+<h2>15. Revision Formula Sheet</h2>
+
+<table>
+<tr><th>Quantity</th><th>Formula</th></tr>
+<tr><td>Current</td><td>I = Q / t</td></tr>
+<tr><td>Voltage</td><td>V = W / Q</td></tr>
+<tr><td>Resistance</td><td>R = ρL / A</td></tr>
+<tr><td>Ohm's Law</td><td>V = IR</td></tr>
+<tr><td>Series Resistance</td><td>Rₜ = R₁ + R₂ + ...</td></tr>
+<tr><td>Parallel Resistance</td><td>1/Rₜ = 1/R₁ + 1/R₂ + ...</td></tr>
+<tr><td>Electrical Power</td><td>P = VI</td></tr>
+<tr><td>Electrical Energy</td><td>E = Pt</td></tr>
+<tr><td>Kirchhoff's Current Law</td><td>ΣI entering = ΣI leaving</td></tr>
+<tr><td>Kirchhoff's Voltage Law</td><td>ΣV = 0 around a closed loop</td></tr>
+</table>
+</section>
+
+<section>
+<h2>16. Revision Summary</h2>
+<ul>
+<li>Electricity involves electric charges and their movement.</li>
+<li>Current is the rate of flow of charge.</li>
+<li>Voltage is energy transferred per unit charge.</li>
+<li>Resistance opposes the flow of current.</li>
+<li>Ohm's law relates voltage, current and resistance.</li>
+<li>Series circuits have one current path.</li>
+<li>Parallel circuits have separate branches.</li>
+<li>Kirchhoff's laws describe current and voltage in circuits.</li>
+<li>Electrical power is the rate of energy transfer.</li>
+</ul>
+</section>
+
+</main>
+
+<footer>
+<p>Aldin's Study Hub | CIR 103</p>
+<p>Electrical Principles</p>
+</footer>
+
+</body>
+</html>
